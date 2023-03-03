@@ -2,6 +2,25 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+  /* CSS para dar estilo a la página */
+  body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  }
+  h1 {
+  color: steelblue;
+  }
+  button {
+  padding: 10px 20px;
+  background-color: steelblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  </style>
 </head>
 <body>
 <h1>Mi primera página web</h1>
@@ -13,5 +32,13 @@ los alumnos de la academia BlockMaker.
 <p id="text">
 Este es un texto que cambiará cuando se haga clic en el botón anterior.
 </p>
+<script>
+  document
+  .getElementById('myButton')
+  .addEventListener('click', function () {
+  document.getElementById('text').innerHTML =
+  'El botón fue presionado!';
+  });
+  </script>
 </body>
 </html>
